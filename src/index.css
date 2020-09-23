@@ -329,16 +329,16 @@ p {
 	transition: 0.25s;
 }
 
-.change .bar1 {
+.menuOpen .bar1 {
 	-webkit-transform: rotate(-45deg) translate(-6px, 5px);
 	transform: rotate(-45deg) translate(-6px, 5px);
 }
 
-.change .bar2 {
+.menuOpen .bar2 {
 	opacity: 0;
 }
 
-.change .bar3 {
+.menuOpen .bar3 {
 	-webkit-transform: rotate(45deg) translate(-8px, -7px);
 	transform: rotate(45deg) translate(-8px, -7px);
 }
