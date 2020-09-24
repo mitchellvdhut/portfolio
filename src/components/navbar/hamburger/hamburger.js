@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
+import './hamburger.css';
 
-export const Menu = ({ callback, isOpen }) => {
+export const Hamburger = ({ callback, isOpen }) => {
     const toggle = () => {
         callback(!isOpen);
     };
@@ -19,4 +20,4 @@ export const Menu = ({ callback, isOpen }) => {
     );
 };
 
-export default Menu;
+export default Hamburger;

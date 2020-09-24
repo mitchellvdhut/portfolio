@@ -1,0 +1,11 @@
+footer {
+    flex-shrink: 0;
+}
+.social-media-icons {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+.social-media-icon {
+    width: 40px;
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import './menu.css';
 
 export const Menu = ({ expand }) => {
     return (
@@ -12,7 +13,7 @@ export const Menu = ({ expand }) => {
                     id="menu-item-26"
                     className="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-26"
                 >
-                    <a href="http://mitchellvdhut.com">Home</a>
+                    <a href="/">Home</a>
                 </li>
                 <li
                     id="menu-item-25"
@@ -26,13 +27,13 @@ export const Menu = ({ expand }) => {
                     id="menu-item-31"
                     className="menu-item menu-item-type-custom menu-item-object-custom menu-item-31"
                 >
-                    <a href="#">Over mij</a>
+                    <a href="/">Over mij</a>
                 </li>
                 <li
                     id="menu-item-32"
                     className="menu-item menu-item-type-custom menu-item-object-custom menu-item-32"
                 >
-                    <a href="#">Contact</a>
+                    <a href="/">Contact</a>
                 </li>
             </ul>
         </div>
