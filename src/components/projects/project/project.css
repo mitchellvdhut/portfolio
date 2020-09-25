@@ -18,3 +18,13 @@
 .project img {
     width: 185px;
 }
+
+@media only screen and (max-width: 600px) {
+    .project {
+        flex: 0 1 100%;
+        max-height: 100%;
+    }
+    .project img {
+        width: 100%;
+    }
+}

@@ -7,11 +7,32 @@ const Footer = () => {
         <footer>
             <div className="container">
                 <div className="social-media-icons">
-                    <img className="social-media-icon" src={linkedIn} alt="" />
-                    <img className="social-media-icon" src={github} alt="" />
-                    <img className="social-media-icon" src={facebook} alt="" />
+                    <a href="https://www.linkedin.com/in/mitchell-van-der-hut/">
+                        <img
+                            className="social-media-icon"
+                            src={linkedIn}
+                            alt=""
+                        />
+                    </a>
+                    <a href="https://github.com/mitchellvdhut">
+                        <img
+                            className="social-media-icon"
+                            src={github}
+                            alt=""
+                        />
+                    </a>
+                    <a href="https://www.facebook.com/mitchell.vanderhut/">
+                        <img
+                            className="social-media-icon"
+                            src={facebook}
+                            alt=""
+                        />
+                    </a>
                 </div>
-                <p>Copyright &copy; mitchellvdhut.com 2020</p>
+                <p>
+                    Copyright &copy; mitchellvdhut.com{' '}
+                    {new Date().getFullYear()}
+                </p>
             </div>
         </footer>
     );

@@ -1,0 +1,12 @@
+{
+    "projects": [
+        {
+            "title": "Project 1",
+            "body": "This is a sample project"
+        },
+        {
+            "title": "Project 2",
+            "body": "This is a sample project"
+        }
+    ]
+}

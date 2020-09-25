@@ -7,13 +7,13 @@ export const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     return (
         <header className="header">
-            <Menu expand={isOpen} />
             <div className="container header-container">
                 <div className="branding">
                     <a href="/">Mitchell van der Hut</a>
                 </div>
                 <Hamburger callback={setIsOpen} isOpen={isOpen} />
             </div>
+            <Menu expand={isOpen} />
         </header>
     );
 };

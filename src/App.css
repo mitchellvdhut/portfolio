@@ -9,6 +9,9 @@ body,
     width: 100%;
     align-items: center;
 }
+.cover {
+    overflow: hidden;
+}
 
 .container {
     max-width: 880px;
@@ -67,6 +70,6 @@ p {
 
 @media only screen and (max-width: 600px) {
     .container {
-        padding: 60px;
+        padding: 0px 60px;
     }
 }
