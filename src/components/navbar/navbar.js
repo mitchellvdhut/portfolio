@@ -5,9 +5,23 @@ import './navbar.css';
 
 export const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
+    let sticky = (window.onscroll = () => {
+        if (
+            document.body.scrollTop > 50 ||
+            document.documentElement.scrollTop > 50
+        ) {
+            console.log('sticky');
+        } else {
+            console.log('not sticky');
+        }
+    });
     return (
         <header className="header">
-            <div className="container header-container">
+            <div
+                className={`container header-container ${
+                    sticky ? 'sticky' : ''
+                } `}
+            >
                 <div className="branding">
                     <a href="/">Mitchell van der Hut</a>
                 </div>

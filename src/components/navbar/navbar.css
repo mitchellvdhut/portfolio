@@ -1,6 +1,9 @@
 header {
     width: 100%;
     max-width: 880px;
+    position: sticky;
+    top: 0;
+    z-index: 3;
 }
 .header-container {
     background: #fff;

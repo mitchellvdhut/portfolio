@@ -38,7 +38,10 @@ h5 {
 p {
     font-family: 'Roboto', sans-serif;
 }
-
+h3 {
+    font-size: 40px;
+    color: #fff;
+}
 /* portfolio items styling */
 
 .portfolio_project_post {

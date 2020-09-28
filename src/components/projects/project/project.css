@@ -8,15 +8,31 @@
 }
 .projects-container::after {
     content: '';
-    width: 185px;
+    width: 250px;
 }
 .project {
-    flex: 0 1 185px;
+    flex: 0 1 250px;
     margin-bottom: 25px;
-    max-height: 185px;
+    max-height: 250px;
 }
-.project img {
-    width: 185px;
+.project a {
+    display: inline-block;
+    position: relative;
+    padding-top: 100%;
+    width: 100%;
+}
+.project img,
+.project .project-meta {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: left;
+}
+.project:hover .project-meta {
+    z-index: 1;
+    background: #555;
 }
 
 @media only screen and (max-width: 600px) {

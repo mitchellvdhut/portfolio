@@ -3,7 +3,7 @@
 .hamburger-toggler {
     display: inline-block;
     cursor: pointer;
-    z-index: 2;
+    z-index: 3;
 }
 
 .bar1,
