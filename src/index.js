@@ -4,31 +4,8 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter } from 'react-router-dom';
-import { createStore } from 'redux';
 import { Provider } from 'react-redux';
-
-const initialState = {
-    menuStatus: 'CLOSED',
-};
-
-function reducer(state = initialState, action) {
-    switch (action.type) {
-        case 'OPEN_MENU':
-            return {
-                ...state,
-                menuStatus: 'OPEN',
-            };
-        case 'CLOSE_MENU':
-            return {
-                ...state,
-                menuStatus: 'CLOSED',
-            };
-        default:
-            return state;
-    }
-}
-
-const store = createStore(reducer);
+import store from './store';
 
 ReactDOM.render(
     <React.StrictMode>

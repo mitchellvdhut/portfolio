@@ -2,19 +2,10 @@ import React from 'react';
 import './hamburger.css';
 import { connect, useDispatch } from 'react-redux';
 
-function mapStateToProps(state) {
-    return {
-        menuStatus: state.isOpen,
-    };
-}
-
-export const Hamburger = ({ callback, isOpen }) => {
+export const Hamburger = ({ isOpen }) => {
     const dispatch = useDispatch();
     const toggle = () => {
-        callback(!isOpen);
-        !isOpen
-            ? dispatch({ type: 'OPEN_MENU' })
-            : dispatch({ type: 'CLOSE_MENU' });
+        dispatch({ type: !isOpen ? 'OPEN_MENU' : 'CLOSE_MENU' });
     };
 
     return (
@@ -33,4 +24,4 @@ export const Hamburger = ({ callback, isOpen }) => {
     );
 };
 
-export default connect(mapStateToProps)(Hamburger);
+export default Hamburger;

@@ -7,9 +7,8 @@ import Helmet from 'react-helmet';
 import { useSelector } from 'react-redux';
 
 function App() {
-    const menuStatus = useSelector(state => state.menuStatus);
-    console.log(menuStatus);
-    menuStatus === 'OPEN'
+    const menuStatus = useSelector(state => state.isMenuOpen);
+    menuStatus
         ? document.body.classList.add('cover')
         : document.body.classList.remove('cover');
     return (
