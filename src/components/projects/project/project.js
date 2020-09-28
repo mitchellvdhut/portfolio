@@ -1,19 +1,15 @@
 import React from 'react';
 import './project.css';
 
-const Project = () => {
+const Project = ({ title, body, image }) => {
     return (
         <div className="project">
             <a href="#0">
                 <div className="project-meta">
-                    <h3>Title</h3>
-                    <p>description</p>
+                    <h3>{title}</h3>
+                    <p>{body}</p>
                 </div>
-                <img
-                    className="project-image"
-                    src="https://via.placeholder.com/250"
-                    alt=""
-                />
+                <img className="project-image" src={image} alt={title} />
             </a>
         </div>
     );

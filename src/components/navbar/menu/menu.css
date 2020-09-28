@@ -20,15 +20,11 @@
     font-size: 34px;
     font-weight: bold;
 }
-.header_menu li:hover,
-.header_menu li a:focus {
-    -webkit-animation: grow 1s; /* Safari 4.0 - 8.0 */
-    animation: grow 1s;
-    animation-fill-mode: backwards;
-}
+
 .header_menu li:hover:before,
 .header_menu li a:focus {
-    content: '▶  ';
+    font-size: 40px;
+    content: '▶ ';
 }
 .fade {
     -webkit-animation: fade 0.5s; /* Safari 4.0 - 8.0 */
@@ -102,22 +98,6 @@ header.fade {
     to {
         margin-left: 0px;
         opacity: 1;
-    }
-}
-@-webkit-keyframes grow {
-    from {
-        font-size: 32px;
-    }
-    to {
-        font-size: 40px;
-    }
-}
-@keyframes grow {
-    from {
-        font-size: 32px;
-    }
-    to {
-        font-size: 40px;
     }
 }
 .branding {

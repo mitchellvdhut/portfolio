@@ -1,6 +1,6 @@
 import React from 'react';
 import './hamburger.css';
-import { connect, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 
 export const Hamburger = ({ isOpen }) => {
     const dispatch = useDispatch();
