@@ -13,10 +13,17 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    transition: padding 0.1s;
+}
+.sticky {
+    padding: 20px 60px;
 }
 
 @media only screen and (max-width: 600px) {
     .header-container {
         padding: 60px;
+    }
+    .sticky {
+        padding: 20px 60px;
     }
 }

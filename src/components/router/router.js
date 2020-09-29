@@ -7,8 +7,8 @@ import Contact from '../contact/contact';
 const Router = () => {
     return (
         <Switch>
-            <Route path="/" component={Projects} />
-            <Route path="/over-mij" component={About} />
+            <Route exact path="/" component={Projects} />
+            <Route path="/about-me" component={About} />
             <Route path="/contact" component={Contact} />
         </Switch>
     );

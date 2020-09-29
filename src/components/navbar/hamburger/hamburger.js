@@ -4,7 +4,8 @@ import { useDispatch } from 'react-redux';
 
 export const Hamburger = ({ isOpen }) => {
     const dispatch = useDispatch();
-    const toggle = () => {
+    const toggle = event => {
+        event.preventDefault();
         dispatch({ type: !isOpen ? 'OPEN_MENU' : 'CLOSE_MENU' });
     };
 

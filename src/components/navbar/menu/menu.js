@@ -1,7 +1,11 @@
 import React from 'react';
 import './menu.css';
+import { Link, useLocation } from 'react-router-dom';
+import pages from '../../../pages.json';
 
 export const Menu = ({ expand }) => {
+    const location = useLocation().pathname;
+    const mainMenu = pages['main-menu'];
     return (
         <div
             id="header_menu"
@@ -9,18 +13,17 @@ export const Menu = ({ expand }) => {
             className={`header_menu ${expand ? 'fadeSlide fade' : ''}`}
         >
             <ul id="menu-hoofdmenu" className="menu">
-                <li id="menu-item-26" className="menu-item">
-                    <a href="/">Home</a>
-                </li>
-                <li id="menu-item-25" className="menu-item">
-                    <a href="/">Project 1</a>
-                </li>
-                <li id="menu-item-31" className="menu-item">
-                    <a href="/">Over mij</a>
-                </li>
-                <li id="menu-item-32" className="menu-item">
-                    <a href="/">Contact</a>
-                </li>
+                {mainMenu.map((page, index) => (
+                    <li
+                        className={`menu-item ${
+                            location === page.path ? 'currentPage' : ''
+                        }`}
+                    >
+                        <Link key={index} to={page.path}>
+                            {page.label}
+                        </Link>
+                    </li>
+                ))}
             </ul>
         </div>
     );

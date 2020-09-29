@@ -13,12 +13,23 @@
     text-align: center;
     line-height: 60px;
 }
+.menu {
+    padding: 0px 60px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .header_menu a {
     color: #333;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-size: 34px;
     font-weight: bold;
+}
+.currentPage a {
+    box-shadow: 0px 2px 0px 0px black;
 }
 
 .header_menu li:hover:before,

@@ -1,0 +1,20 @@
+{
+    "main-menu": [
+        {
+            "label": "Projects",
+            "path": "/"
+        },
+        {
+            "label": "About me",
+            "path": "/about-me"
+        },
+        {
+            "label": "CV",
+            "path": "/cv"
+        },
+        {
+            "label": "Contact",
+            "path": "/contact"
+        }
+    ]
+}

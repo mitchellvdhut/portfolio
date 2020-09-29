@@ -6,8 +6,8 @@ const projects = data.projects;
 const Projects = () => {
     return (
         <div className="projects-container">
-            {projects.map(project => (
-                <Project {...project} />
+            {projects.map((project, index) => (
+                <Project key={index} {...project} />
             ))}
         </div>
     );

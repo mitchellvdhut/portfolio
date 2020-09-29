@@ -9,6 +9,16 @@
             "title": "Project 2",
             "body": "This is a sample project",
             "image": "https://via.placeholder.com/250"
+        },
+        {
+            "title": "Project 1",
+            "body": "This is a sample project",
+            "image": "https://via.placeholder.com/250"
+        },
+        {
+            "title": "Project 2",
+            "body": "This is a sample project",
+            "image": "https://via.placeholder.com/250"
         }
     ]
 }
