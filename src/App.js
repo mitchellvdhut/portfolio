@@ -7,18 +7,19 @@ import Helmet from 'react-helmet';
 import { useSelector, useDispatch } from 'react-redux';
 import { useLocation } from 'react-router-dom';
 
-function App({ isOpen }) {
+function App() {
     const dispatch = useDispatch();
     const location = useLocation();
+    const menuStatus = useSelector(state => state.isMenuOpen);
 
     useEffect(() => {
         dispatch({ type: 'CLOSE_MENU' });
     }, [dispatch, location.pathname]);
 
-    const menuStatus = useSelector(state => state.isMenuOpen);
     menuStatus
         ? document.body.classList.add('cover')
         : document.body.classList.remove('cover');
+
     return (
         <div className="App">
             <Helmet>
@@ -33,7 +34,6 @@ function App({ isOpen }) {
                 />
                 <title>Projecten | mitchellvdhut.com</title>
             </Helmet>
-
             <Navbar />
             <div className="main container">
                 <Router />

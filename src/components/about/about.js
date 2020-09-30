@@ -23,7 +23,7 @@ const about = () => {
                     className="portrait"
                     src="https://via.placeholder.com/250"
                     alt="me"
-                ></img>
+                />
             </section>
         </div>
     );
