@@ -15,6 +15,7 @@ export const Menu = ({ expand }) => {
             <ul id="menu-hoofdmenu" className="menu">
                 {mainMenu.map((page, index) => (
                     <li
+                        key={index}
                         className={`menu-item ${
                             location === page.path ? 'currentPage' : ''
                         }`}

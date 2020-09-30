@@ -1,0 +1,18 @@
+.content {
+    display: flex;
+    flex-direction: column;
+}
+.about {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    column-gap: 2rem;
+}
+.about .portrait {
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .about {
+        grid-template-columns: 1fr;
+    }
+}

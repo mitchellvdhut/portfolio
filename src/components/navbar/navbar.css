@@ -6,7 +6,7 @@ header {
     z-index: 3;
 }
 .header-container {
-    background: #fff;
+    background: #faf6f6;
     padding: 80px 20px;
     display: flex;
     flex-grow: 1;
@@ -16,7 +16,7 @@ header {
     transition: padding 0.1s;
 }
 .sticky {
-    padding: 20px 60px;
+    padding: 20px;
 }
 
 @media only screen and (max-width: 600px) {
