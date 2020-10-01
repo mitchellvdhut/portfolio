@@ -1,0 +1,26 @@
+{
+    "files": {
+        "main.css": "/static/css/main.87b941fb.chunk.css",
+        "main.js": "/static/js/main.8144f745.chunk.js",
+        "main.js.map": "/static/js/main.8144f745.chunk.js.map",
+        "runtime-main.js": "/static/js/runtime-main.19ccc7f6.js",
+        "runtime-main.js.map": "/static/js/runtime-main.19ccc7f6.js.map",
+        "static/js/2.ea453d8e.chunk.js": "/static/js/2.ea453d8e.chunk.js",
+        "static/js/2.ea453d8e.chunk.js.map": "/static/js/2.ea453d8e.chunk.js.map",
+        "index.html": "/index.html",
+        "precache-manifest.ca09d1cab04c73160de028057bce9e81.js": "/precache-manifest.ca09d1cab04c73160de028057bce9e81.js",
+        "service-worker.js": "/service-worker.js",
+        "static/css/main.87b941fb.chunk.css.map": "/static/css/main.87b941fb.chunk.css.map",
+        "static/js/2.ea453d8e.chunk.js.LICENSE.txt": "/static/js/2.ea453d8e.chunk.js.LICENSE.txt",
+        "static/js/pdf.worker.entry.6316c4eb.worker.js": "/static/js/pdf.worker.entry.6316c4eb.worker.js",
+        "static/js/pdf.worker.entry.6316c4eb.worker.js.LICENSE.txt": "/static/js/pdf.worker.entry.6316c4eb.worker.js.LICENSE.txt",
+        "static/js/pdf.worker.entry.6316c4eb.worker.js.map": "/static/js/pdf.worker.entry.6316c4eb.worker.js.map",
+        "static/media/github.png": "/static/media/github.357c3c73.png"
+    },
+    "entrypoints": [
+        "static/js/runtime-main.19ccc7f6.js",
+        "static/js/2.ea453d8e.chunk.js",
+        "static/css/main.87b941fb.chunk.css",
+        "static/js/main.8144f745.chunk.js"
+    ]
+}
