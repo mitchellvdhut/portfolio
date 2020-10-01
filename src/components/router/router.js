@@ -9,7 +9,7 @@ import Project from '../projects/project/project';
 const Page404 = () => {
     return (
         <div>
-            <h1>Error 404 - Page not found</h1>
+            <h1>Error 404 - Page can not be found</h1>
         </div>
     );
 };
