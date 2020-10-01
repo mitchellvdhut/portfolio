@@ -5,7 +5,7 @@ import { Page } from 'react-pdf';
 const contact = () => {
     return (
         <div className="contact">
-            <Document file="https://mitchellvdhut.com/cv.pdf">
+            <Document file="cv.pdf">
                 <Page pageNumber={1} />
             </Document>
         </div>
