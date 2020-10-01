@@ -25,6 +25,9 @@ body,
     display: flex;
     justify-content: space-between;
 }
+.content {
+    width: 100%;
+}
 .branding a {
     color: #333;
     text-decoration: none;
