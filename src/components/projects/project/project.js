@@ -1,16 +1,25 @@
 import React from 'react';
 import './project.css';
+import data from '../../../data.json';
+import { useParams } from 'react-router-dom';
 
-const Project = ({ title, body, image }) => {
+const projects = data.projects;
+
+const Project = () => {
+    let { id } = useParams();
+    const { title, body, image } = projects.filter(
+        project => project.index == id,
+    )[0];
+
     return (
-        <div className="project">
-            <a href="#0">
-                <div className="project-meta">
-                    <h3>{title}</h3>
+        <div className="content">
+            <section className="about">
+                <div className="personal">
+                    <h1>{title}</h1>
                     <p>{body}</p>
                 </div>
-                <img className="project-image" src={image} alt={title} />
-            </a>
+                <img className="portrait" src={image} alt={title} />
+            </section>
         </div>
     );
 };
