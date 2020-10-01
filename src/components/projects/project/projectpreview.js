@@ -1,10 +1,10 @@
 import React from 'react';
 import './projectpreview.css';
 
-const ProjectPreview = ({ title, previewtext, image }) => {
+const ProjectPreview = ({ title, previewtext, image, index }) => {
     return (
         <div className="project-preview">
-            <a href="/project/1">
+            <a href={'/project/' + index}>
                 <div className="project-preview-meta">
                     <h3>{title}</h3>
                     <p>{previewtext}</p>
