@@ -8,7 +8,7 @@ const projects = data.projects;
 const Project = () => {
     let { test } = useParams();
     const { title, body, image } = projects.filter(
-        project => project.index.toString() === id,
+        project => project.index.toString() === test,
     )[0];
 
     return (
