@@ -6,7 +6,7 @@ import { useParams } from 'react-router-dom';
 const projects = data.projects;
 
 const Project = () => {
-    let { id } = useParams();
+    let { test } = useParams();
     const { title, body, image } = projects.filter(
         project => project.index.toString() === id,
     )[0];
