@@ -6,14 +6,6 @@ import Contact from '../contact/contact';
 import CV from '../cv/cv';
 import Project from '../projects/project/project';
 
-const Page404 = () => {
-    return (
-        <div>
-            <h1>Error 404 - Page can not be found</h1>
-        </div>
-    );
-};
-
 const Router = () => {
     return (
         <Switch>
