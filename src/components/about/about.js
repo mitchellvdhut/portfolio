@@ -19,11 +19,7 @@ const about = () => {
                         anim id est laborum.
                     </p>
                 </div>
-                <img
-                    className="portrait"
-                    src="https://via.placeholder.com/250"
-                    alt="me"
-                />
+                <img className="portrait" src="assets/250.png" alt="me" />
             </section>
         </div>
     );
