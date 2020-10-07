@@ -21,8 +21,8 @@ const Projects = () => {
 
     return (
         <div className="projects-container">
-            {projects.map((project, index) => (
-                <ProjectPreview key={index} {...project} />
+            {projects.map((project, id) => (
+                <ProjectPreview key={id} {...project} />
             ))}
         </div>
     );
