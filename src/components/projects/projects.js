@@ -1,9 +1,24 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import ProjectPreview from './project/projectpreview';
-import data from '../../data.json';
+import axios from 'axios';
 
-const projects = data.projects;
 const Projects = () => {
+    const [projects, setProjects] = useState([]);
+
+    useEffect(() => {
+        axios({
+            method: 'get',
+            url: 'https://mitchellvdhut-api.herokuapp.com/',
+        }).then(
+            response => {
+                setProjects(response.data);
+            },
+            error => {
+                console.log(error);
+            },
+        );
+    }, []);
+
     return (
         <div className="projects-container">
             {projects.map((project, index) => (

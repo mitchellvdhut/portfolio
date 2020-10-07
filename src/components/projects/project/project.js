@@ -1,15 +1,29 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './project.css';
-import data from '../../../data.json';
 import { useParams } from 'react-router-dom';
-
-const projects = data.projects;
+import axios from 'axios';
 
 const Project = () => {
-    let { test } = useParams();
-    const { title, body, image } = projects.filter(
-        project => project.index.toString() === test,
-    )[0];
+    const { id } = useParams();
+    const [projects, setProjects] = useState();
+
+    useEffect(() => {
+        axios({
+            method: 'get',
+            url: `https://mitchellvdhut-api.herokuapp.com/project/${id}`,
+        }).then(
+            response => {
+                setProjects(response.data);
+            },
+            error => {
+                console.log(error);
+            },
+        );
+    }, [id]);
+
+    if (!projects) return <p>loading...</p>;
+
+    const { title, body, image } = projects;
 
     return (
         <div className="content">
