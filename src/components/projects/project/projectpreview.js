@@ -2,13 +2,13 @@ import React from 'react';
 import './projectpreview.css';
 import { Link } from 'react-router-dom';
 
-const ProjectPreview = ({ title, previewtext, image, id }) => {
+const ProjectPreview = ({ title, description, image, _id: { $oid } }) => {
     return (
         <div className="project-preview">
-            <Link to={`/project/${id}`}>
+            <Link to={`/project/${$oid}`}>
                 <div className="project-preview-meta">
                     <h3>{title}</h3>
-                    <p>{previewtext}</p>
+                    <p>{description}</p>
                 </div>
                 <img className="project-image" src={image} alt={title} />
             </Link>

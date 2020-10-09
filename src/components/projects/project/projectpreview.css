@@ -35,7 +35,7 @@
     max-height: 100%;
     margin: 0 auto;
 }
-/.project-preview-meta {
+.project-preview-meta {
     display: none;
 }
 .project-preview:hover .project-preview-meta {

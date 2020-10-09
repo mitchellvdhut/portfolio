@@ -10,7 +10,7 @@ const Project = () => {
     useEffect(() => {
         axios({
             method: 'get',
-            url: `https://mitchellvdhut-api.herokuapp.com/project?id=${id}`,
+            url: `https://mitchellvdhut-api.herokuapp.com/project?projectid=${id}`,
         }).then(
             response => {
                 setProjects(response.data);
@@ -23,14 +23,14 @@ const Project = () => {
 
     if (!projects) return <p>loading...</p>;
 
-    const { title, body, image } = projects;
+    const { title, description, image } = projects[0];
 
     return (
         <div className="content">
             <section className="about">
                 <div className="personal">
                     <h1>{title}</h1>
-                    <p>{body}</p>
+                    <p>{description}</p>
                 </div>
                 <img className="portrait" src={image} alt={title} />
             </section>
