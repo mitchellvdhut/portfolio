@@ -9,8 +9,8 @@ export const Navbar = () => {
     const [isSticky, setIsSticky] = useState(false);
     window.onscroll = () =>
         setIsSticky(
-            document.body.scrollTop > 50 ||
-                document.documentElement.scrollTop > 50,
+            document.body.scrollTop > 15 ||
+                document.documentElement.scrollTop > 15,
         );
     return (
         <header className="header">

@@ -7,7 +7,7 @@ header {
 }
 .header-container {
     background: #faf6f6;
-    padding: 80px 20px;
+    padding: 80px 20px 20px;
     display: flex;
     flex-grow: 1;
     flex-direction: row;
@@ -16,14 +16,14 @@ header {
     transition: padding 0.1s;
 }
 .sticky {
-    padding: 20px;
+    padding: 50px 20px;
 }
 
 @media only screen and (max-width: 600px) {
     .header-container {
-        padding: 60px;
+        padding: 60px 60px 20px;
     }
     .sticky {
-        padding: 20px 60px;
+        padding: 40px 60px;
     }
 }
