@@ -1,0 +1,19 @@
+.message {
+    padding: 20px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 20% 70% 10%;
+    color: #333;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.message:nth-child(odd) {
+    background: #eee;
+}
+.message:hover {
+    background: #ddd;
+}
+.sender-email {
+    font-weight: bold;
+}

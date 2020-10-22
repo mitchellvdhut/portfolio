@@ -37,10 +37,21 @@
 }
 .project-preview-meta {
     display: none;
+    padding: 20px;
+    overflow: hidden;
+    color: white;
+}
+.project-preview-meta p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    height: 100%;
+    align-self: flex-end;
 }
 .project-preview:hover .project-preview-meta {
     z-index: 1;
-    display: block;
+    display: flex;
+    flex-direction: column;
     background: #555;
 }
 

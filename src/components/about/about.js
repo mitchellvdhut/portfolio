@@ -8,18 +8,24 @@ const about = () => {
                 <div className="personal">
                     <h1>Over mij</h1>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu
-                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit
-                        anim id est laborum.
+                        Mijn naam is Mitchell van der Hut, ik ben 25, kom uit
+                        Den Haag en ik studeer Open-ICT aan de Hogeschool
+                        Utrecht. Ik heb hier voor de MBO-opleiding Interactive
+                        Media Design gedaan in Rotterdam.
+                        <br />
+                        <br />
+                        Naast school werk ik deeltijd bij MediaMarkt Hoog
+                        Catherijne als verkoopmedewerker. In mijn vrije tijd ben
+                        ik ook graag bezig met het ontwerpen en programmeren van
+                        side-projects.
+                        <br />
+                        <br />
+                        Ik weet nog niet welke richting ik uit wil na de
+                        opleiding, dus ik hoop daar achter te komen door zo veel
+                        mogelijk te proberen.
                     </p>
                 </div>
-                <img className="portrait" src="assets/250.png" alt="me" />
+                <img className="portrait" src="assets/mitchell.jpg" alt="me" />
             </section>
         </div>
     );

@@ -1,0 +1,12 @@
+.message-title {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+.message-title h3 {
+    color: #333;
+}
+.inbox-button {
+    text-decoration: underline;
+    color: #333;
+}

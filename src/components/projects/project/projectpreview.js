@@ -8,7 +8,7 @@ const ProjectPreview = ({ title, description, image, _id: { $oid } }) => {
             <Link to={`/project/${$oid}`}>
                 <div className="project-preview-meta">
                     <h3>{title}</h3>
-                    <p>{description}</p>
+                    <p>{description.slice(0, 120) + '...'}</p>
                 </div>
                 <img className="project-image" src={image} alt={title} />
             </Link>

@@ -6,7 +6,7 @@ header {
     z-index: 3;
 }
 .header-container {
-    background: #faf6f6;
+    background: #fffefc;
     padding: 80px 20px 20px;
     display: flex;
     flex-grow: 1;

@@ -1,9 +1,9 @@
 import React from 'react';
-import './form.css';
+import './projectform.css';
 
-const Form = () => {
+const ProjectForm = () => {
     return (
-        <form action="/form-submit" method="POST">
+        <form>
             <input type="text" placeholder="Naam" />
             <input type="email" placeholder="email" />
             <input type="text" placeholder="onderwerp" />
@@ -13,4 +13,4 @@ const Form = () => {
     );
 };
 
-export default Form;
+export default ProjectForm;
