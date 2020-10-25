@@ -1,20 +1,55 @@
 {
     "main-menu": [
         {
-            "label": "Projects",
+            "title": "Projects",
+            "label": "projects",
             "path": "/"
         },
         {
-            "label": "About me",
+            "title": "About me",
+            "label": "about-me",
             "path": "/about-me"
         },
         {
-            "label": "CV",
+            "title": "CV",
+            "label": "cv",
             "path": "/cv"
         },
         {
-            "label": "Contact",
+            "title": "Contact",
+            "label": "contact",
             "path": "/contact"
+        }
+    ],
+    "routes": [
+        {
+            "title": "Home",
+            "label": "home",
+            "path": "/"
+        },
+        {
+            "title": "About me",
+            "label": "about-me",
+            "path": "/about-me",
+            "parent": "Home"
+        },
+        {
+            "title": "CV",
+            "label": "cv",
+            "path": "/cv",
+            "parent": "Home"
+        },
+        {
+            "title": "Contact",
+            "label": "contact",
+            "path": "/contact",
+            "parent": "Home"
+        },
+        {
+            "title": "Project",
+            "label": "project",
+            "path": "/project",
+            "parent": "Projects"
         }
     ]
 }

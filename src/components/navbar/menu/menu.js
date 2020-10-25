@@ -4,7 +4,8 @@ import { Link, useLocation } from 'react-router-dom';
 import pages from '../../../pages.json';
 
 export const Menu = ({ expand }) => {
-    const location = useLocation().pathname;
+    let location = useLocation().pathname;
+    if (location.split('/')[1] === 'project') location = '/';
     const mainMenu = pages['main-menu'];
     return (
         <div
@@ -21,7 +22,7 @@ export const Menu = ({ expand }) => {
                         }`}
                     >
                         <Link key={index} to={page.path}>
-                            {page.label}
+                            {page.title}
                         </Link>
                     </li>
                 ))}

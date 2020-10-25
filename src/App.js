@@ -6,6 +6,7 @@ import Footer from './components/footer/footer';
 import Helmet from 'react-helmet';
 import { useSelector, useDispatch } from 'react-redux';
 import { useLocation } from 'react-router-dom';
+import Breadcrumbs from './components/breadcrumbs/breadcrumbs';
 
 function App() {
     const dispatch = useDispatch();
@@ -36,6 +37,7 @@ function App() {
             </Helmet>
             <Navbar />
             <div className="main container">
+                {location.pathname === '/' ? '' : <Breadcrumbs />}
                 <Router />
             </div>
             <Footer />
