@@ -9,7 +9,7 @@ const Inbox = () => {
     useEffect(() => {
         axios({
             method: 'get',
-            // url: 'https://mitchellvdhut-api.herokuapp.com/inbox',
+            // url: 'http://www.monneylane.com/inbox,
             url: 'http://localhost:5000/inbox',
         }).then(
             response => {

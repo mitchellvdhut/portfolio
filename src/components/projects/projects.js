@@ -8,7 +8,8 @@ const Projects = () => {
     useEffect(() => {
         axios({
             method: 'get',
-            url: 'https://mitchellvdhut-api.herokuapp.com/',
+            url: 'http://www.moneylane.com/projects',
+            // url: 'http://localhost/projects',
         }).then(
             response => {
                 setProjects(response.data);

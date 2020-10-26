@@ -10,7 +10,7 @@ const Project = () => {
     useEffect(() => {
         axios({
             method: 'get',
-            url: `https://mitchellvdhut-api.herokuapp.com/project?projectid=${id}`,
+            url: `http://www.moneylane.com/project?projectid=${id}`,
         }).then(
             response => {
                 setProjects(response.data);
