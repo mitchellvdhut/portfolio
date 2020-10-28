@@ -10,7 +10,8 @@ const Inbox = () => {
         axios({
             method: 'get',
             // url: 'http://www.monneylane.com/inbox,
-            url: 'http://localhost:5000/inbox',
+            url: 'https://mitchellvdhut-api.herokuapp.com/',
+            // url: 'http://localhost:5000/inbox',
         }).then(
             response => {
                 setMessages(response.data);
