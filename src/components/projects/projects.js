@@ -9,7 +9,7 @@ const Projects = () => {
         axios({
             method: 'get',
             // url: 'http://www.monneylane.com/projects',
-            url: 'https://mitchellvdhut-api.herokuapp.com/',
+            url: 'https://mitchellvdhut-api.herokuapp.com/projects',
             // url: 'http://localhost/projects',
         }).then(
             response => {
