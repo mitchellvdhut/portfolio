@@ -23,8 +23,9 @@ const Project = () => {
     }, [id]);
 
     if (!projects) return <p>loading...</p>;
+    console.log('projects', projects);
 
-    const { title, description, image } = projects[0];
+    const { title, description, image } = projects;
 
     return (
         <div className="content">
